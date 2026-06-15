@@ -2,8 +2,6 @@
 
 <div align="center">
 
-<img src="./regex-ui/public/logo.png" alt="Regex Studio" width="120"/>
-
 ### Modern Regex Testing & Debugging Platform
 
 Build, test, debug, and analyze Regular Expressions with real-time matching, capture groups, pattern history, and an interactive reference guide.
@@ -264,15 +262,9 @@ Open a Pull Request describing your changes.
 
 ---
 
-## License
-
-Licensed under the MIT License.
-
----
-
 ## Author
 
-**Priyanshu Jha**
+**Priyanshu Ojha**
 
 GitHub: https://github.com/priyansx2233
 
