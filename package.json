@@ -1,6 +1,9 @@
 {
   "name": "regex-server",
   "version": "1.0.0",
+  "engines": {
+    "node": "22.x"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,4 +19,6 @@
     "re2": "^1.24.1",
     "re2-wasm": "^1.0.2"
   }
+  
+  
 }
