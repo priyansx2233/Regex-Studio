@@ -10,6 +10,11 @@ app.use(express.json({ limit: "2mb" }));
 
 app.use("/api/regex", regexRoutes);
 
-app.listen(3000,()=>{
-    console.log("http://localhost:3000")
-})
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
