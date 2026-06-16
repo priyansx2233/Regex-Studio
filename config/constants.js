@@ -1,0 +1,9 @@
+module.exports = {
+
+  MAX_TEXT_SIZE: 1024 * 1024,
+
+  MAX_PATTERN_SIZE: 500,
+
+  MAX_MATCHES: 10000
+
+};
