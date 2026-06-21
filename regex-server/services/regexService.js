@@ -1,7 +1,7 @@
-const RE2 = require("re2");
+
 
 function runRegex({ pattern, text, flags = "g" }) {
-  const regex = new RE2(pattern, flags);
+  const re = new RegExp(pattern, flags);
   const matches = [];
   const start = performance.now();
 
