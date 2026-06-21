@@ -5,6 +5,6 @@ const {
   executeRegex
 } = require("../controllers/regexController");
 
-router.post("/", executeRegex);
+router.post("/test", executeRegex);
 
 module.exports = router;
