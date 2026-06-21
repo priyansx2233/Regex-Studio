@@ -7,7 +7,7 @@ function runRegex({ pattern, text, flags = "g" }) {
 
   let match;
   let count = 0;
-
+  
   while ((match = re.exec(text)) !== null) {
     const rawGroups = match.groups ?? match.slice(1);
     const groupItems = Array.isArray(rawGroups)
