@@ -140,7 +140,7 @@ export default function App() {
 
   const runRegex = useCallback(async () => {
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+      const apiUrl = import.meta.env.DEV ? "http://localhost:3000" : (import.meta.env.VITE_API_URL || "http://localhost:3000");
       const res = await axios.post(`${apiUrl}/api/regex`, { pattern, text, flags });
       const got = res.data.matches || [];
       setMatches(got);
