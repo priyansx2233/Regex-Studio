@@ -8,7 +8,7 @@ function runRegex({ pattern, text, flags = "g" }) {
   let match;
   let count = 0;
 
-  while ((match = regex.exec(text)) !== null) {
+  while ((match = re.exec(text)) !== null) {
     const rawGroups = match.groups ?? match.slice(1);
     const groupItems = Array.isArray(rawGroups)
       ? rawGroups.map((value, index) => ({ name: `$${index + 1}`, value }))
